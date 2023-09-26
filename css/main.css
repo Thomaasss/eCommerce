@@ -1,0 +1,565 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+/* FICHIER INDEX.PHP */
+
+/* Toute la partie HEADER */
+
+header {
+    background-color: #c9a46c;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-header {
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Toute la partie NAVIGATION */
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #1b1b1b;
+}
+
+.nav_left-link {
+    margin-left: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav_left-link ul {
+    margin-left: 35px;
+    display: flex;
+}
+
+.nav_left-link li {
+    margin: 25px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.nav_left-link a {
+    color: white;
+}
+
+.nav_left-link a:hover {
+    transition: 0.2s all;
+    color: rgb(209, 208, 205);
+}
+
+.fbs-logo {
+    user-select: none;
+    width: 55px;
+    margin-top: -21px;
+}
+
+.nav_right-link {
+    margin-right: 35px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin-top: -96px;
+}
+
+.nav_right-link input {
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: white;
+}
+
+.nav_right-link a {
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.nav_right-link img {
+    position: relative;
+    top: -5px;
+    width: 25px;
+}
+
+.nav_left-link .dropdown-menu {
+    display: none;
+}
+
+.link {
+    height: 46px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #1b1b1b;
+    left: -35px;
+    top: 110px;
+    width: 100%;
+    z-index: 1;
+}
+
+.link:hover .dropdown-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover .dropdown-menu .dropdown-title {
+    margin-left: 45px;
+}
+  
+.dropdown-menu li {
+    margin: 10px;
+}
+  
+.dropdown-menu li ul {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.size_logo-title {
+    width: 40px;
+    user-select: none;
+}
+
+.lign {
+    background-color: #c9a46c;
+    margin-left: 40px;
+    padding: 1px;
+}
+
+.dropdown-connect {
+    display: flex;
+}
+
+.dropdown-connect-menu {
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #1b1b1b;
+    right: 0;
+    left: 89.4%;
+    top: 110px;
+    width: 10.5%;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown-connect:hover .dropdown-connect-menu {
+    display: flex;
+}
+
+.dropdown-connect-menu a {
+    user-select: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c9a46c;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dropdown-connect-menu p {
+    user-select: none;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.dropdown-connect-menu .dropdown-connect-user-name {
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.dropdown-connect-logo {
+    position: relative;
+    height: 45px;
+    top: 9px;
+}
+
+.search-button {
+    position: relative;
+    top: 5px;
+    right: 65px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Toutes la partie des SLIDE IMAGES */
+
+.slide-main-picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-main-picture ul {
+    width: 300%;
+    animation: slide 30s infinite;
+}
+
+.slide-main-picture li {
+    float: left;
+    width: 33.3333%;
+}
+
+.slide-main-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.pos-slide-text {
+    position: relative;
+}
+
+.slide-main-picture h2 {
+    user-select: none;
+    position: absolute;
+    margin: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.slide-main-picture h3 {
+    user-select: none;
+    position: absolute;
+    padding: 10px;
+    margin: 25px;
+    font-size: 25px;
+    color: black;
+}
+
+.slide-main-picture h4 {
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    padding: 10px;
+    margin: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.slide-main-picture h5 {
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    padding: 10px;
+    margin: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+@keyframes slide {
+    0% {
+      margin-left: 0%;
+    }
+    33.33% {
+      margin-left: -100%;
+    }
+    66.66% {
+      margin-left: -200%;
+    }
+    100% {
+      margin-left: 0%;
+    }
+}
+
+/* FICHIER LOGIN.PHP & SIGNUP.PHP */
+
+.container-signup {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 650px;
+    height: 650px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.sub-container-signup {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    width: 500px;
+    height: 500px;
+}
+
+.style-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-signup input {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 6px 8px;
+    margin: 20px;
+    color: white;
+    background-color: transparent;
+    user-select: none;
+}
+
+.style-checkbox {
+    display: flex;
+    color: white;
+}
+
+.style-checkbox p {
+    position: relative;
+    top: 20px;
+    user-select: none;
+    font-weight: 300;
+}
+
+.style-checkbox input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    border: 1px solid grey;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.style-checkbox input[type=checkbox]:checked {
+    background-color: #c9a46c;
+}
+
+.password-requirement {
+    position: relative;
+    top: -20px;
+    margin: 20px;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+}
+
+.password-requirement li {
+    list-style: inside;
+}
+
+.style-submit input {
+    position: relative;
+    width: 463px;
+    padding: 10px;
+    right: 2px;
+    top: -30px;
+    font-weight: 300;
+    background-color: #c9a46c;
+    cursor: pointer;
+}
+
+.style-submit p {
+    position: relative;
+    top: -50px;
+    margin: 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.style-submit a {
+    color: white;
+    text-decoration: underline;
+}
+
+.container-login {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 650px;
+    height: 450px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.sub-container-login {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    width: 500px;
+    height: 300px;
+}
+
+.container-login input {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 6px 8px;
+    margin: 20px;
+    color: white;
+    background-color: transparent;
+    user-select: none;
+}
+
+.style-submit-login input {
+    position: relative;
+    width: 463px;
+    padding: 10px;
+    right: 2px;
+    top: -15px;
+    font-weight: 300;
+    background-color: #c9a46c;
+    cursor: pointer;
+}
+
+.style-submit-login p {
+    position: relative;
+    margin: 20px;
+    top: -30px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.style-submit-login a {
+    color: white;
+    text-decoration: underline;
+}
+
+.question-math {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    user-select: none;
+    position: relative;
+    left: 20px;
+}
+
+/* FICHIER BASKET.PHP ET FAVORITES.PHP */
+
+.container-basket-and-favorites {
+    position: relative;
+    top: 100px;
+    left: 250px;
+    width: 1000px;
+}
+
+.container-basket-and-favorites h1 {
+    color: white;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.container-product-basket-and-favorites img {
+    width: 150px;
+    user-select: none;
+}
+
+.container-product-basket-and-favorites {
+    position: relative;
+    width: 700px;
+    margin-top: -30px;
+}
+
+.container-product-basket-and-favorites p {
+    position: relative;
+    top: 100px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content:center;
+}
+
+.container-product-basket-and-favorites input[type='text'] {
+    background: none;
+    color: white;
+}
+
+.container-product-basket-and-favorites input[type='submit'] {
+    background-color: #c9a46c;
+    border: none;
+    cursor: pointer;
+}
+
+.container-product-basket-and-favorites input[type='submit']:hover {
+    color: white;
+    transition: 0.3s all;
+    background: none;
+    border: 1px solid white;
+}
+
+.send-order {
+    display: flex;
+    justify-content: center;
+}
+
+.send-order input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c9a46c;
+    color: white;
+    cursor: pointer;
+}
+
+.send-order input:hover {
+    transition: 0.3s all;
+    background: none;
+    border: 1px solid white;
+}
+
+.container-product-basket-and-favorites .img-trash {
+    width: 25px;
+    margin: 10px;
+}
+
+.container-product-basket-and-favorites a {
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-img-trash-basket {
+    position: relative;
+    left: 45%;
+    display: flex;
+}
+
+/* FOOTER - FIN DE PAGE */
+
+footer {
+    background-color: #1b1b1b;
+}
+
+footer p {
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}

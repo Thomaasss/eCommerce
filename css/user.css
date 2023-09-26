@@ -1,0 +1,300 @@
+/* FICHIER SIGNUP.PHP & LOGIN.PHP POUR INDIQUER LES MESSAGES D'ERREUR */
+
+.error-message {
+    position: relative;
+    left: 20px;
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+    user-select: none;
+    margin-top: -15px;
+    display: none;
+}
+
+.error-message.invalid {
+    display: block;
+}
+
+.error-message-right {
+    position: relative;
+    left: 277px;
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+    user-select: none;
+    margin-top: -15px;
+    display: none;
+}
+
+.error-message-right.invalid {
+    display: block;
+}
+
+.error-message-login {
+    position: relative;
+    left: 20px;
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+    user-select: none;
+    margin-top: -15px;
+}
+
+/* FICHIER USER-PANEL.PHP */
+
+.container-user-panel {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    width: 80%;
+}
+
+.container-user-panel h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container-user-panel h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.container-user-panel h5 {
+    color: white;
+    font-weight: 500;
+}
+
+.information-user-panel {
+    position: relative;
+    width: 100%;
+}
+
+.information-user-panel input {
+    position: relative;
+    padding: 10px;
+    width: 29%;
+    right: 20px;
+    margin: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 1440px) {
+    .information-user-panel input {
+        width: 27%;
+    }
+}
+
+.information-user-panel label {
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.input-save-info {
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.input-save-info:hover {
+    transition: 0.3s all;
+    background-color: #c9a46c;
+    color: white;
+}
+
+.information-added {
+    position: relative;
+    margin: auto;
+    padding: 9px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    cursor: not-allowed;
+    user-select: none;
+    text-align: center;
+}
+
+.delete-account {
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(147, 25, 25);
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+
+.delete-account:hover {
+    transition: 0.3s all;
+    background-color: rgb(235, 56, 56);
+}
+
+/* user-panel.php pour afficher les commandes passés */
+
+.container-get-product ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.container-get-product  li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 220px;
+    background-color: #f9f9f9;
+}
+
+.container-get-product li img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+.container-get-product li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* FICHIER ADMIN-PANEL.PHP */
+
+.container-admin-panel {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    width: 80%;
+}
+
+.container-admin-panel h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container-admin-panel h3 {
+    font-size: 16px;
+    color: white;
+    text-decoration: underline;
+}
+
+.container-admin-panel a {
+    color: white;
+    font-weight: 300;
+}
+
+.container-admin-panel ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+.container-admin-panel li {
+    flex-basis: 20%;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.container-username {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.product-type {
+  font-weight: 500; 
+}
+
+/* Liste des produits (admin-panel) */ 
+
+.container-shoe-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    color: white;
+    font-weight: 300;
+}
+
+.shoe-info a {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.shoe-info {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shoe-info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shoe-info p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Liste des commandes en attende de validation */ 
+
+.order-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.order-button-validate input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-button-validate input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #07680a;
+}
+
+.order-button-reject input[type=submit] {
+    background-color: #ba1b0c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-button-reject input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #6e0d04;
+}

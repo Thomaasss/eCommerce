@@ -1,0 +1,234 @@
+body.background-color {
+    background-color: white;
+}
+
+/* FICHER ADIDAS-M-W.PHP */
+
+.container-item {
+    position: relative;
+    top: 60px;
+    left: 150px;
+    width: 85%;
+    font-size: 13px;
+}
+
+.container-item h2 {
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.container-item a {
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.container-item a:hover {
+    color: gray;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container-product {
+    position: relative;
+    width: 375px;
+    height: 375px;
+    margin: 10px;
+    margin-bottom: 80px;
+    right: 10px;
+    user-select: none;
+}
+
+.container-product a {
+    text-decoration: none;
+}
+
+.container-product a:hover {
+    color: black;
+}
+
+.img-product img {
+    width: 100%;
+}
+
+.product-name {
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product-price {
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+    float: right;
+}
+
+.product-type {
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* FICHIER SPE-PRODUCT.PHP */
+
+.container-spe-item {
+    position: relative;
+    top: 60px;
+    left: 150px;
+    width: 85%;
+    height: 100%;
+    font-size: 13px;
+}
+
+.container-spe-item a {
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+}
+
+.container-spe-item a:hover {
+    color: gray;
+}
+
+.container-spe-left {
+    width: 810px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 20px;
+}
+
+.container-spe-img {
+    width: 805px;
+    margin: 1px;
+}
+
+.container-spe-img img {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.container-spe-moreImg {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 2px;
+}
+
+.container-spe-moreImg img {
+    width: 100%;
+    user-select: none;
+}
+
+.container-spe-right {
+    position: absolute;
+    margin-left: 105%;
+}
+
+.container-spe-right h1 {
+    white-space: nowrap;
+}
+
+.container-different-shoes h4 {
+    white-space: nowrap;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.container-different-shoes img {
+    position: relative;
+    width: 70px;
+    right: 3px;
+    margin: 3px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    user-select: none;
+}
+
+.container-size button {
+    position: relative;
+    height: 40px;
+    width: 15%;
+    right: 3px;
+    margin: 3px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+}
+
+.container-size button:active {
+    border: 2px solid #c9a46c;
+}
+
+.button-basket-favorites button {
+    position: relative;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    right: 3px;
+    margin: 3px;
+    background-color: #1b1b1b;
+    color: white;
+    cursor: pointer;
+}
+
+.button-basket-favorites button:hover {
+    transition: 0.3s all;
+    background-color: #c9a46c;
+}
+
+.unavailable-shoe {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.rating input[type=number] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.rating-submit {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: #1b1b1b;
+}
+
+.rating-submit:hover {
+    cursor: pointer;
+    transition: 0.2s all;
+    background-color: #c9a46c;
+}
+
+/* overlay-text pour toutes les pages des produit 1-2-3-4-5 pour afficher "INDISPONIBLE" */ 
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
