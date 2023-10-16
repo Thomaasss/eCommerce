@@ -1894,16 +1894,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`ID_User`, `firstName`, `lastName`, `mail`, `password`, `phoneNumber`, `country`, `city`, `postalCode`, `adress`, `nb_order`, `favoriteProduct`) VALUES
-(18, 'dzqddqd', 'zdqdqdzd', 'aaa', 'bbb', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(19, 'dzdqddzd', 'qzdddqdz', 'qzdqd@gmail.com', 'Salut91.', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(20, 'dzqddzd', 'dzqdddq', 'dzqddzzd@gmail.com', 'Salut91.', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(21, 'qzdqdz', 'dzqdqdz', 'dzqdqd@gmail.com', 'djzdqjdzjdDqdz91.', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(22, 'Bonjour', 'Bonsoir', 'bonjour@gmail.com', 'Bonjour91!', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(23, 'Dani', 'Cindyt', 'cindyt@gmail.com', 'Cindy91!', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(24, 'Mehdi ', 'Ahmed-Monalla', 'mehdi@gmail.com', 'Mehdi91.', NULL, NULL, NULL, NULL, NULL, 3, NULL),
-(26, 'dqdz', 'EE', 'eee@gmail.com', 'DDDEeE91.', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(27, 'dzqdd', 'dqzdd', 'dzqddqdqzd@gmail.com', 'Dada888.', NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(39, 'Thomas', 'Lopes', 'boy4.thomms@gmail.com', 'Thomas.91!', 766456663, 'France', 'Crosne', 91560, '10 rue Des Maxime Derache', 1, NULL);
+(39, 'Gauthier', 'Yuou', 'gauthier@gmail.com', 'Gauthier01.', 0606060606, 'France', 'Bordeaux', 33000, '98 rue de Bordeau', 1, NULL);
 
 --
 -- Contraintes pour les tables déchargées
